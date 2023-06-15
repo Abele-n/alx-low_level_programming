@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- *main - Entry point
- *Description: 'Program that prints a message followed by a new line'
- *Return: Always 0(success)
+ *main-Entry point
+ *Description:'Program that prints a message followed by a new line'
+ *Return:Always 0(success)
  */ 
 
 int main(void)
