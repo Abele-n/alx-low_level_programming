@@ -2,11 +2,12 @@
 #include<stdlib.h>
 #include<string.h>
 /**
- * main-describes alphabets without q and e
+ * main-prints the alphabets without q and e
  * return:Always 0(success)
  */
+
 int main(void)
-/*prints alphabets without q and e*/
+
 {
 	int i;
 
