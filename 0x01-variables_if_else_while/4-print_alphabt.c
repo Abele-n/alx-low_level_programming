@@ -6,7 +6,7 @@
  * return:Always 0(success)
  */
 int main(void)
-
+/*prints alphabets without q and e*/
 {
 	int i;
 
