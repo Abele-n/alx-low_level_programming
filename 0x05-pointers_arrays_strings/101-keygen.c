@@ -10,9 +10,8 @@
 int main(void)
 
 {
-	int r = 0;
+	int r = 0, c = 0;
 
-	int c = 0;
 
 	time_t t;
 
