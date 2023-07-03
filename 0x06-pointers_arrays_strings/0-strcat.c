@@ -7,7 +7,7 @@
  * return: dest
  */
 char *_strcat(char *dest, char *src)
-	/*_strcat: concatenates two strings*/
+/*_strcat: concatenates two strings*/
 {
 	int i;
 
