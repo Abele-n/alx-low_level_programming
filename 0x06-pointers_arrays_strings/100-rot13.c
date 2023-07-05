@@ -4,7 +4,7 @@
 /**
  * rot13-encoder
  * @s: pointer to string params
- * return: *s
+ * Return: *s
  */
 char *rot13(char *s)
 
