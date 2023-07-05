@@ -4,10 +4,9 @@
  * _strcat- concatenates two strings
  * @src: the input value
  * @dest: the input value
- * return: dest
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
-/*_strcat: concatenates two strings*/
 {
 	int i;
 
