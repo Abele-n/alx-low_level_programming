@@ -1,12 +1,12 @@
-format: db `Hello, Holberton`,0 
+format: db `Hello, Holberton\n`,0 
 
 global main
-extern global
+extern printf
 
 call printf
 
 main:
-mov rdi, format
-xor rsi, rsi
-mov rmi, 0
+mov edi, format
+xor rdi, rdi
+mov rdi, 0
 ret
