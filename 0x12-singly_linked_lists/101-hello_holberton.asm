@@ -1,5 +1,3 @@
-format: db `Hello, Holberton\n`,0 
-
 global main
 extern printf
 
@@ -10,3 +8,5 @@ mov edi, format
 xor rdi, rdi
 mov rdi, 0
 ret
+
+format: db`Hello, Holberton\n`,0
