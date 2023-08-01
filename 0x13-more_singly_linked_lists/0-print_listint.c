@@ -15,7 +15,7 @@ size_t print_listint(const listint_t *h)
 
 	size_t counter = 0; /*initializes the node count*/
 
-	if (present != NULL)
+	while (present != NULL)
 	{
 		printf("%d\n", present->n);
 		counter++;
