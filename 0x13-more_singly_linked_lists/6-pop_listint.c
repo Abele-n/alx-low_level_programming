@@ -15,16 +15,12 @@ int pop_listint(listint_t **head)
 
 	int num_del;
 
-	if (*head == NULL || head == NULL)
+	while (*head == NULL || head == NULL)
 	{
 		num_del = (*head)->n;
-		free(*head);
 		present = (*head)->next;
+		free(*head);
 		*head = present;
-	}
-	else
-	{
-		return (0);
 	}
 	return (num_del);
 }
