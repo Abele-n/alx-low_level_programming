@@ -14,8 +14,8 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int converted_value = 0;
 
 	int counter;
-	
-	if (b == NULL && (b != 0 || b != 0))
+
+	if (b == NULL)
 		return (0);
 	for (counter = 0; b[counter] != '\0'; counter++)
 	{
