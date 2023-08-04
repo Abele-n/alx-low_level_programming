@@ -7,11 +7,14 @@
 
 void print_binary(unsigned long int n)
 {
-	int k, counter;
 	unsigned long int present;
 	int display = 0;
 
-	while (present > 0)
+	int k = 0;
+
+	present = n >> k;
+
+	for (k = sizeof(unsigned long int) * 8; k >= 0; k++)
 	{
 		if (present & 1)
 		{
