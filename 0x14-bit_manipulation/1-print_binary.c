@@ -11,11 +11,11 @@ void print_binary(unsigned long int n)
 	int counter = 0;
 
 	int k = 0;
-
-	present = n >> k;
-
-	for (k = 42; k >= 0; k++)
+	
+	for (k = (sizeof(unsigned long int) *8); k >= 0; k--)
 	{
+		present = n >> k;
+		
 		if (present & 1)
 		{
 			_putchar('1');
