@@ -13,7 +13,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int file_pointer, string_len = 0, m;
 
-	if (filename == NULL)
+	if (!filename)
 		return (-1);
 	if (text_content != NULL)
 	{
@@ -21,7 +21,13 @@ int create_file(const char *filename, char *text_content)
 			string_len++;
 	}
 	file_pointer = open(filename, O_RDWR, O_CREAT, O_TRUNC, 0600);
-	m = write(file_pointer, text_content, string_len);
+	
+	if (text_content)
+	{
+		while (text_content[string_len])
+			string_len++;
+		m = write(file_pointer, text_content, string_len);
+	}
 
 	if (file_pointer == -1 || m == -1)
 		return (-1);

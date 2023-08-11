@@ -13,6 +13,12 @@ int append_text_to_file(const char *filename, char *text_content)
 {
 	int naf, m, string_len = 0;
 
+	int *filename && int *text_content = NULL;
+
+	int naf = (int)filename;
+
+	int naf = (int)text_content;
+
 	if (filename == NULL)
 		return (-1);
 	if (text_content != NULL)
