@@ -15,12 +15,9 @@ int create_file(const char *filename, char *text_content)
 
 	if (!filename)
 		return (-1);
-	if (text_content != NULL)
-	{
-		for (string_len = 0; text_content[string_len];)
-			string_len++;
-	}
 	file_pointer = open(filename, O_RDWR, O_CREAT, O_TRUNC, 0600);
+	if (file_pointer == -1)
+		return (-1);
 
 	if (text_content)
 	{
@@ -29,7 +26,7 @@ int create_file(const char *filename, char *text_content)
 		m = write(file_pointer, text_content, string_len);
 	}
 
-	if (file_pointer == -1 || m == -1)
+	if (m == -1)
 		return (-1);
 	close(file_pointer);
 	return (1);
