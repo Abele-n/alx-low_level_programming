@@ -21,7 +21,7 @@ int create_file(const char *filename, char *text_content)
 			string_len++;
 	}
 	file_pointer = open(filename, O_RDWR, O_CREAT, O_TRUNC, 0600);
-	
+
 	if (text_content)
 	{
 		while (text_content[string_len])
