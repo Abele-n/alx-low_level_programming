@@ -11,11 +11,11 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int file_pointer, m, string_len;
+	int file_pointer, string_len = 0, m;
 
 	if (filename == NULL)
 		return (-1);
-	if (text_content)
+	if (text_content != NULL)
 	{
 		for (string_len = 0; text_content[string_len];)
 			string_len++;
