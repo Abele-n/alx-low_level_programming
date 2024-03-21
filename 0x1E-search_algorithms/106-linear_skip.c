@@ -36,7 +36,7 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 
 	while (list != go->next)
 	{
-		printf("Value checked at index [%d] = [%d]]n", (int)list->index, list->n);
+		printf("Value checked at index [%d] = [%d]n", (int)list->index, list->n);
 		if (list->n == value)
 			return (list);
 		list = list->next;
